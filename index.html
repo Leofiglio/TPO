@@ -1,0 +1,845 @@
+<!-- ¿Qué hay que entregar para este trabajo práctico?
+El TPO deberá cumplir con los siguientes requisitos:
+Crear un sitio web con las siguientes características y requisitos:
+● Poseer al menos 4 páginas html (index.html, acerca de.html, novedades.html, contacto.html, estilos.css), siendo su temática libre. En caso de ser un Sitio
+Web estilo One Page, el mismo deberá tener al menos 5 secciones.
+● Utilizar etiquetas semánticas para estructurar el sitio.
+● Contener un formulario de contacto con validación realizada mediante Javascript.
+Opcional: el formulario podrá enviar un email utilizando algún servicio externo
+destinado para ello.
+● Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
+bien de Google Fonts.
+● Tener al menos una página totalmente responsive con 3 puntos de corte para 3
+tamaños de dispositivos distintos.
+● Incorporar al menos una animación, transformación o una transición (se deberá
+indicar en qué parte del sitio web fue incorporada la animación).
+● Poseer una estructura HTML maquetada con Flexbox y/o Grid.
+● Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
+momento de entregar el TPO.
+● En caso de querer utilizar Bootstrap (no es obligatorio), sólo podrá hacerlo en la
+página del formulario del sitio web. No se aceptarán proyectos desarrollados
+íntegramente en algún Framework de CSS (Bootstrap, Materialize, Tailwind o
+similar).
+● El desarrollo web deberá subirse a un servidor on-line para poder ser navegada por
+el Docente. Ejemplo: GitHub Pages, Netlify o similares.
+● Además de los aspectos técnicos mencionados anteriormente, el proyecto deberá
+contemplar aspectos de diseño los cuales también serán evaluados por el Docente.
+Para eso se recomienda que vean el material disponible en el Aula Virtual.
+Seminario de Diseño Web: https://youtu.be/fVkGt2tYIj0. Para más información, ver
+material incluído en el Aula Virtual “Diseño”. En relación al estilo de la web
+(look&feel) se evaluará y considerará: maquetación del sitio web; alineación, orden
+y márgenes entre los elementos; tipografía seleccionada acorde a la temática del
+proyecto; fotografía de calidad y optimizada para web; paleta de colores
+seleccionada acorde a la temática; logo utilizado en el sitio web. -->
+
+
+<!-- Path: index.html -->
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inicio</title>
+        <link rel="icon" type="image/png" href="/img/Favicon.png"/> <!--Leo l agrego un favicon a la página-->
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <script defer src="eleccionpais.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="img/6.jpg" alt="logo"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="acerca.html">Acerca de las energías</a></li>
+                        <li><a href="novedades.html">Novedades</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </header>
+    
+        <main>
+            <section class="banner">
+                <div class="container">
+                    <div class="banner-text">
+                        <h1>¡Bienvenido al sitio web "Renovable"!</h1>
+                        <p>En este sitio web encontrarás información sobre las energías renovables y no renovables, además de novedades sobre el tema.</p>
+                        <p>Se denomina “energías renovables” a aquellas fuentes energéticas basadas en la utilización del sol, el viento, el agua o la biomasa vegetal o animal -entre otras-. Se caracterizan por no utilizar combustibles fósiles –como sucede con las energías convencionales-, sino recursos capaces de renovarse ilimitadamente. Su impacto ambiental es de menor magnitud dado que además de no emplear recursos finitos, no generan contaminantes. Sus beneficios van desde la diversificación de la matriz energética del país hasta el fomento a la industria nacional; y desde el desarrollo de las economías regionales hasta el impulso al turismo.</p>
+                        <a href="acerca.html" class="btn">Conocé más</a>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="acerca">
+                <div class="container">
+                    <div class="acerca-text">
+                        <h2>El futuro en las energías renovables</h2>
+                        <p>Las energías renovables son fuentes de energía limpias, inagotables y crecientemente competitivas. Se diferencian de los combustibles fósiles principalmente en su diversidad, abundancia y potencial de aprovechamiento en  cualquier parte del planeta, pero sobre todo en que no producen gases de efecto invernadero –causantes del cambio climático- ni emisiones contaminantes. Además, sus costes evolucionan a la baja de forma sostenida, mientras que la tendencia general de costes de los combustibles fósiles es la opuesta, al margen de su volatilidad coyuntural.
+
+                            El crecimiento de las energías renovables es imparable, como queda reflejado en las estadísticas aportadas anualmente por la Agencia Internacional de la Energía (AIE): Según las previsiones de la AIE, la participación de las renovables en el suministro eléctrico global pasará del 26% en 2018 al 44% en 2040, y proporcionarán 2/3 del incremento de demanda eléctrica registrado en ese período, principalmente a través de las tecnologías eólica y fotovoltaica.
+                            
+                            De acuerdo a la AIE, la demanda mundial de electricidad  aumentará un 70% hasta 2040,-elevando su participación en el uso de energía final del 18% al 24% en el mismo periodo- espoleada principalmente por regiones emergentes (India, China, África, Oriente Medio y el sureste asiático). </p>
+                        <a href="acerca.html" class="btn">Conocé más</a>
+                    </div>
+                    <div class="acerca-img">
+                        <img src="img/2.jpg" alt="acerca">
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <section class="encuesta">
+                <div class="container">
+                    <div class="encuesta-text">
+                        <h2>Encuesta</h2>
+                        <form action="index.html" method="POST">
+                        <span>¿En qué país residís?</span><br>  <!-- agrego select para eleccion de país de residencia Leonardo-->
+                        <select id="combo1" onchange= "seleccionarpais();" name="elecpais"> <!--evento onchange para función Js Leonardo-->
+                            <option value="AF">Afganistán</option>
+                            <option value="AL">Albania</option>
+                            <option value="DE">Alemania</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antártida</option>
+                            <option value="AG">Antigua y Barbuda</option>
+                            <option value="AN">Antillas Holandesas</option>
+                            <option value="SA">Arabia Saudí</option>
+                            <option value="DZ">Argelia</option>
+                            <option value="AR" selected>Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaiyán</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrein</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BE">Bélgica</option>
+                            <option value="BZ">Belice</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermudas</option>
+                            <option value="BY">Bielorrusia</option>
+                            <option value="MM">Birmania</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BA">Bosnia y Herzegovina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BR">Brasil</option>
+                            <option value="BN">Brunei</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="BT">Bután</option>
+                            <option value="CV">Cabo Verde</option>
+                            <option value="KH">Camboya</option>
+                            <option value="CM">Camerún</option>
+                            <option value="CA">Canadá</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CY">Chipre</option>
+                            <option value="VA">Ciudad del Vaticano (Santa Sede)</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comores</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, República Democrática del</option>
+                            <option value="KR">Corea</option>
+                            <option value="KP">Corea del Norte</option>
+                            <option value="CI">Costa de Marfíl</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="HR">Croacia (Hrvatska)</option>
+                            <option value="CU">Cuba</option>
+                            <option value="DK">Dinamarca</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egipto</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="AE">Emiratos Árabes Unidos</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="SI">Eslovenia</option>
+                            <option value="ES">España</option>
+                            <option value="US">Estados Unidos</option>
+                            <option value="EE">Estonia</option>
+                            <option value="ET">Etiopía</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="PH">Filipinas</option>
+                            <option value="FI">Finlandia</option>
+                            <option value="FR">Francia</option>
+                            <option value="GA">Gabón</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GD">Granada</option>
+                            <option value="GR">Grecia</option>
+                            <option value="GL">Groenlandia</option>
+                            <option value="GP">Guadalupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GY">Guayana</option>
+                            <option value="GF">Guayana Francesa</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GQ">Guinea Ecuatorial</option>
+                            <option value="GW">Guinea-Bissau</option>
+                            <option value="HT">Haití</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HU">Hungría</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IQ">Irak</option>
+                            <option value="IR">Irán</option>
+                            <option value="IE">Irlanda</option>
+                            <option value="BV">Isla Bouvet</option>
+                            <option value="CX">Isla de Christmas</option>
+                            <option value="IS">Islandia</option>
+                            <option value="KY">Islas Caimán</option>
+                            <option value="CK">Islas Cook</option>
+                            <option value="CC">Islas de Cocos o Keeling</option>
+                            <option value="FO">Islas Faroe</option>
+                            <option value="HM">Islas Heard y McDonald</option>
+                            <option value="FK">Islas Malvinas</option>
+                            <option value="MP">Islas Marianas del Norte</option>
+                            <option value="MH">Islas Marshall</option>
+                            <option value="UM">Islas menores de Estados Unidos</option>
+                            <option value="PW">Islas Palau</option>
+                            <option value="SB">Islas Salomón</option>
+                            <option value="SJ">Islas Svalbard y Jan Mayen</option>
+                            <option value="TK">Islas Tokelau</option>
+                            <option value="TC">Islas Turks y Caicos</option>
+                            <option value="VI">Islas Vírgenes (EEUU)</option>
+                            <option value="VG">Islas Vírgenes (Reino Unido)</option>
+                            <option value="WF">Islas Wallis y Futuna</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italia</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japón</option>
+                            <option value="JO">Jordania</option>
+                            <option value="KZ">Kazajistán</option>
+                            <option value="KE">Kenia</option>
+                            <option value="KG">Kirguizistán</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="LA">Laos</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LV">Letonia</option>
+                            <option value="LB">Líbano</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libia</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lituania</option>
+                            <option value="LU">Luxemburgo</option>
+                            <option value="MK">Macedonia, Ex-República Yugoslava de</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MY">Malasia</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MV">Maldivas</option>
+                            <option value="ML">Malí</option>
+                            <option value="MT">Malta</option>
+                            <option value="MA">Marruecos</option>
+                            <option value="MQ">Martinica</option>
+                            <option value="MU">Mauricio</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">México</option>
+                            <option value="FM">Micronesia</option>
+                            <option value="MD">Moldavia</option>
+                            <option value="MC">Mónaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Níger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk</option>
+                            <option value="NO">Noruega</option>
+                            <option value="NC">Nueva Caledonia</option>
+                            <option value="NZ">Nueva Zelanda</option>
+                            <option value="OM">Omán</option>
+                            <option value="NL">Países Bajos</option>
+                            <option value="PA">Panamá</option>
+                            <option value="PG">Papúa Nueva Guinea</option>
+                            <option value="PK">Paquistán</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Perú</option>
+                            <option value="PN">Pitcairn</option>
+                            <option value="PF">Polinesia Francesa</option>
+                            <option value="PL">Polonia</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="UK">Reino Unido</option>
+                            <option value="CF">República Centroafricana</option>
+                            <option value="CZ">República Checa</option>
+                            <option value="ZA">República de Sudáfrica</option>
+                            <option value="DO">República Dominicana</option>
+                            <option value="SK">República Eslovaca</option>
+                            <option value="RE">Reunión</option>
+                            <option value="RW">Ruanda</option>
+                            <option value="RO">Rumania</option>
+                            <option value="RU">Rusia</option>
+                            <option value="EH">Sahara Occidental</option>
+                            <option value="KN">Saint Kitts y Nevis</option>
+                            <option value="WS">Samoa</option>
+                            <option value="AS">Samoa Americana</option>
+                            <option value="SM">San Marino</option>
+                            <option value="VC">San Vicente y Granadinas</option>
+                            <option value="SH">Santa Helena</option>
+                            <option value="LC">Santa Lucía</option>
+                            <option value="ST">Santo Tomé y Príncipe</option>
+                            <option value="SN">Senegal</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leona</option>
+                            <option value="SG">Singapur</option>
+                            <option value="SY">Siria</option>
+                            <option value="SO">Somalia</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="PM">St Pierre y Miquelon</option>
+                            <option value="SZ">Suazilandia</option>
+                            <option value="SD">Sudán</option>
+                            <option value="SE">Suecia</option>
+                            <option value="CH">Suiza</option>
+                            <option value="SR">Surinam</option>
+                            <option value="TH">Tailandia</option>
+                            <option value="TW">Taiwán</option>
+                            <option value="TZ">Tanzania</option>
+                            <option value="TJ">Tayikistán</option>
+                            <option value="TF">Territorios franceses del Sur</option>
+                            <option value="TP">Timor Oriental</option>
+                            <option value="TG">Togo</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad y Tobago</option>
+                            <option value="TN">Túnez</option>
+                            <option value="TM">Turkmenistán</option>
+                            <option value="TR">Turquía</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UA">Ucrania</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistán</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="VN">Vietnam</option>
+                            <option value="YE">Yemen</option>
+                            <option value="YU">Yugoslavia</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabue</option>
+                            <span id="elecpais"></span>
+                            </select>
+                            <br>
+                            <span id="paiseleccionado"></span> <br> <!--el id contiene leyenda con pais seleccionado cundo este en el server Leonardo-->
+                            <span>¿Qué energía renovable te gustaría que se desarrolle en tu país?</span>
+                            <br>
+                            
+                            <input type="radio" name="energia" value="eolica">Eólica<br>
+                            <input type="radio" name="energia" value="solar">Solar<br>
+                            <input type="radio" name="energia" value="hidraulica">Hidráulica<br>
+                            <input type="radio" name="energia" value="geotermica">Geotérmica<br>
+                            <input type="radio" name="energia" value="biomasa">Biomasa<br>
+                            <input type="radio" name="energia" value="otra">Otra<br>
+                            <input type="submit" value="Enviar">
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <div class="footer-text">
+                    <p>© 2022 - Todos los derechos reservados</p>
+                </div>
+                <div class="footer-redes">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
+
+
+<!--Estos son los estilos para el path "index"" con responsive con 3 puntos de corte para 3
+tamaños de dispositivos distintos, incluido un botón para tema oscuro-->
+
+<!-- * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+
+/*Estilos para el header*/
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+header .logo span {
+    color: #f00;
+}
+
+header .nav {
+    display: flex;
+}
+
+header .nav a {
+    color: #fff;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+header .nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+header .nav a.active {
+    background-color: #fff;
+    color: #000;
+}
+
+/*Estilos para el main*/
+
+main {
+    padding: 40px 0;
+}
+
+main .banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .banner .banner-text {
+    text-align: center;
+    color: #fff;
+}
+
+main .banner .banner-text h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+main .banner .banner-text p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+main .banner .banner-text .btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+main .banner .banner-text .btn:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+main .acerca {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 0;
+}
+
+main .acerca .acerca-text {
+    width: 50%;
+}
+
+main .acerca .acerca-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+main .acerca .acerca-text p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+main .acerca .acerca-img {
+    width: 50%;
+}
+
+main .acerca .acerca-img img {
+    width: 100%;
+}
+
+main .encuesta {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+}
+
+main .encuesta .encuesta-text {
+    text-align: center;
+}
+
+main .encuesta .encuesta-text h2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+main .encuesta .encuesta-text p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+main .encuesta .encuesta-text form {
+    margin: 20px 0;
+}
+
+main .encuesta .encuesta-text form input {
+    margin: 10px 0;
+}
+
+/*Estilos para el footer*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .footer-text {
+    font-size: 20px;
+}
+
+footer .footer-redes {
+    display: flex;
+}
+
+footer .footer-redes a {
+    padding: 0 10px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+footer .footer-redes a:hover {
+    color: #f00;
+}
+
+/*Estilos para el tema oscuro*/
+
+body.dark {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark header {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark header .nav a {
+    color: #000;
+}
+
+body.dark header .nav a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark header .nav a.active {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark main {
+    background-color: #000;
+    color: #fff;
+}
+
+body.dark main .banner .banner-text h1 {
+    color: #fff;
+}
+
+body.dark main .banner .banner-text p {
+    color: #fff;
+}
+
+body.dark main .banner .banner-text .btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+body.dark main .banner .banner-text .btn:hover {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+body.dark main .acerca .acerca-text h2 {
+    color: #fff;
+}
+
+body.dark main .acerca .acerca-text p {
+    color: #fff;
+}
+
+body.dark main .encuesta {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark main .encuesta .encuesta-text h2 {
+    color: #000;
+}
+
+body.dark main .encuesta .encuesta-text p {
+    color: #000;
+}
+
+body.dark footer {
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark footer .footer-text {
+    color: #000;
+}
+
+body.dark footer .footer-redes a {
+    color: #000;
+}
+
+body.dark footer .footer-redes a:hover {
+    color: #f00;
+}
+
+/*Estilos para el tema claro*/
+
+body.light {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light header {
+    background-color: #000;
+    color: #fff;
+}
+
+body.light header .nav a {
+    color: #fff;
+}
+
+body.light header .nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light header .nav a.active {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light main {
+    background-color: #fff;
+    color: #000;
+}
+
+body.light main .banner .banner-text h1 {
+    color: #000;
+}
+
+body.light main .banner .banner-text p {
+    color: #000;
+}
+
+body.light main .banner .banner-text .btn {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+body.light main .banner .banner-text .btn:hover {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+body.light main .acerca .acerca-text h2 {
+    color: #000;
+}
+
+body.light main .acerca .acerca-text p {
+    color: #000;
+}
+
+body.light main .encuesta {
+    background-color: #000;
+    color: #fff;
+}
+
+body.light main .encuesta .encuesta-text h2 {
+    color: #fff;
+}
+
+body.light main .encuesta .encuesta-text p {
+    color: #fff;
+}
+
+body.light footer {
+    background-color: #000;
+    color: #fff;
+}
+
+body.light footer .footer-text {
+    color: #fff;
+}
+
+body.light footer .footer-redes a {
+    color: #fff;
+}
+
+body.light footer .footer-redes a:hover {
+    color: #f00;
+}
+
+/*Estilos para el responsive*/
+
+@media (max-width: 768px) {
+    header .nav {
+        display: none;
+    }
+
+    header .nav-toggle {
+        display: block;
+    }
+
+    header .nav-toggle i {
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    header .nav-toggle i:hover {
+        color: #f00;
+    }
+
+    main .banner .banner-text {
+        width: 100%;
+    }
+
+    main .acerca .acerca-text {
+        width: 100%;
+    }
+
+    main .acerca .acerca-img {
+        width: 100%;
+    }
+
+    main .encuesta .encuesta-text {
+        width: 100%;
+    }
+}
+
+/*Estilos para el path acerca con responsive para dispositivos de 1024px*/
+
+@media (max-width: 1024px) {
+    main .acerca .acerca-text {
+        width: 100%;
+    }
+
+    main .acerca .acerca-img {
+        width: 100%;
+    }
+}
+
+/*Estilos para el path acerca con responsive para dispositivos de 768px*/
+
+@media (max-width: 768px) {
+    main .acerca .acerca-text {
+        width: 100%;
+    }
+
+    main .acerca .acerca-img {
+        width: 100%;
+    }
+}
+
+/*Estilos para el path acerca con responsive para dispositivos de 320px*/
+
+@media (max-width: 320px) {
+    main .acerca .acerca-text {
+        width: 100%;
+    }
+
+    main .acerca .acerca-img {
+        width: 100%;
+    }
+} -->
+

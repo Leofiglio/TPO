@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="icon" type="image/png" href="/img/Favicon.png"/> <!--Leo l agrego un favicon a la página-->
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!--bootstrap para la tabla de la API Leonardo-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="img/6.jpg" alt="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="acerca.html">Acerca de las energías</a></li>
+                    <li><a href="novedades.html">Novedades</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>  <!-- Dolores - Cambie un poco el formulario de contacto porque estaba raro el formato, deje el que habias hecho debajo comentado para no perderlo -->
+        
+        <!-- Dolores - Le puse texto que me parecio, preguntas medio random para rellenar -->
+        <section class="novedades">
+            <h2>Voluntariados Ambientales <br> Podemos participar del cambio</h2>
+                        <br>
+            <div class="container">
+                <div class="novedades-container">
+                    <div class="contacto2">
+                        <a href="https://fundacionglobalnature.org/" target="_blank"><img src="img/GlobalN.JPG" alt="novedad"></a>
+                        <!-- <img src="img/GlobalN.JPG" alt="novedad"> -->
+                        <h3>Fundacion Global Nature</h3>
+                        <p>Somos una fundación privada sin ánimo de lucro dedicada a la protección de la naturaleza. Nuestro trabajo se basa en el rigor técnico, el compromiso ético y la innovación. Desde nuestra consolidación en 1993 unimos teoría y práctica: combinando la elaboración de estrategias y planes con el trabajo en campo y los proyectos aplicados. Más de 30 premios reconocen nuestra labor en los últimos años.</p>
+                    </div>
+                    <div class="contacto2">
+                        <a href="https://www.greenpeace.org/argentina/tag/voluntarios/" target="_blank"><img src="img/greenpeace.JPG" alt="novedad"></a>
+                        <h3>Greenpeace Argentina</h3>
+                        <p>Los voluntarios y voluntarias comprenden que los daños ambientales son globales y que no conocen fronteras. Por eso, donan su tiempo, experiencia, habilidades y motivación para lograr que nuestras campañas lleguen a más personas. Contamos con una comunidad de voluntariado nacional representada a través de grupos locales en Bahía Blanca, Buenos Aires, Córdoba, Mar del Plata, Mendoza, Posadas, Rosario y Salta.</p>
+                    </div>
+                    <div class="contacto2">
+                        <a href="http://aapatagonia.org.ar/voluntarios/" target="_blank"><img src="img/AAPatagonia.JPG" alt="novedad"></a>
+                        <h3>Asociacion Amigos de la Patagonia</h3>
+                        <p>La Asociación de Amigos de la Patagonia (AAP) es una organización sin fines de lucro fundada en 1999, en la ciudad de San Martín de los Andes, Provincia del Neuquén, Argentina. Preocupados por el legado ambiental que le estaban dejando a sus hijos y nietos, un grupo de amigos apasionados por la Patagonia decidieron agruparse formalmente para contribuir en la difusión de las problemáticas que enfrenta el ambiente. Así se creó la AAP, desde la cual concientizamos acerca de la necesidad de cuidar el medio en que vivimos.</p>
+                    </div>
+                    <div class="contacto2">
+                        <a href="https://www.worldpackers.com/es/search/eco/south_america/argentina" target="_blank"><img src="img/Worldpackers.JPG" alt="novedad"></a>
+                        <h3>WorldPackers Argentina</h3>
+                        <p>Viaja, colabora e impacta - Viaja como voluntario con seguridad, vive experiencias transformadoras y genera un impacto positivo.</p>
+                    </div>
+                    <div class="contacto2">
+                        <a href="https://https://ecohouse.org.ar/agentes/" target="_blank"><img src="img/Ecohouse.JPG" alt="novedad"></a>
+                        <h3>EcoHouse Argentina</h3>
+                        <p>Eco House es una organización sin fines de lucro de Acción para la Sostenibilidad.Nos especializados en desarrollar programas e iniciativas de educación, política, comunicación, consultoría y restauración ecológica. Actualmente, contamos con más de 40 proyectos activos. ¡Sumate a lo que quieras!</p>
+                    </div>
+                    
+                </div>
+                <!--le agrego la api que es necesaria para la aprobación de tpo en este caso uso una de placeholder Leonardo-->
+                <section class ="API">
+                    <p> Algunos de nuestros colaboradores</p>    
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                 <th>Id</th>
+                                                 <th>Nombre</th>
+                                                 <th>Usuario</th>
+                                                 <th>Email</th>
+                                                 <th>Sitio Web</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="tableBody_Users"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="./apiColaboradores.js"></script>
+                <br>
+                <br>
+                <br>
+                </section>
+            </div>
+        <section class="contacto">
+            <h2>Contacto</h2>
+            <br>
+            <p>Si quieres estar al tanto de las novedades inscribite en nuestra base de datos </p>
+            <br>
+            <div class="container">
+                <Label for="menu">Nombre: </Label><input type="text" id="flast" value="Ingrese su nombre...">
+            </div>
+            <br>
+            <div class="container">
+                <Label for="menu">Apellido: </Label><input type="text" id="flast" value="Ingrese su apellido...">
+            </div>
+            <br>
+            <div class="container">
+                <label for="menu"> Edad:</label>
+                <br>
+                <input type="radio" name="fradio" value="1"> 20-29 años
+                <br>
+                <input type="radio" name="fradio" value="2"> 30-39 años
+                <br>
+                <input type="radio" name="fradio" value="3"> 40-49 años
+                <br>
+                <input type="radio" name="fradio" value="4"> 50-59 años
+                <br>
+                <input type="radio" name="fradio" value="4"> Mayor de 60 años
+            </div>
+            <br>
+            <div class="container">
+                <label for="menu">Te interesa participar en proyectos de energias renovables? </label>
+                <br>
+                <input type="radio" name="fradio" value="1">Si
+                <br>
+                <input type="radio" name="fradio" value="2">No
+                <br>
+                <input type="radio" name="fradio" value="3">No se
+            </div>
+            <br>
+            <div class="container">
+            <label for="menu"> Que proyectos te interesarian? </label>
+            <br>
+            <input type="checkbox" name="fopcion" value=“1">Capacitaciones
+            <br>
+            <input type="checkbox" name="fopcion" value=“2">Trabajo con organizaciones gubernamentales
+            <br>
+            <input type="checkbox" name=“fopcion" value=“3">Ofertas de empleo
+            <br>
+            <input type="checkbox" name=“fopcion" value=“4">Voluntariados
+            <br>
+            <input type="checkbox" name=“fopcion" value=“4">Otros
+            </div>
+            <br>
+                        <div class="container">
+                <form action="#" method="get">
+                    <label for="nav"> Como nos conocio: </label><input list="datos" id="nav">
+                    <datalist id="datos">
+                        <option value="LinkedIn"></option>
+                        <option value="Instagram"></option>
+                        <option value="Facebook"></option>
+                        <option value="Universidad"></option>
+                        <option value="Otros"></option>
+            </div>
+            <br>
+            <div class="container">
+                <Label for="menu">Email: </Label><input type="text" id="flast" value="Ingrese su email...">
+            </div>
+            </datalist>
+            </form>
+            <br>
+            <br>
+            <div>
+                <p>Si queres comunicarte con nosotros escribinos, en_renovables@gmail.com</p>
+            </div>
+            <br>
+            
+            <!--                 
+                <div class="container">
+                    <form action="">
+                        <input type="text" placeholder="Nombre">
+                        <input type="email" placeholder="Email">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div> -->
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-text">
+                <p>© 2022 Todos los derechos reservados</p>
+            </div>
+            <div class="footer-redes">
+                <a href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

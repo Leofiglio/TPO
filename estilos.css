@@ -1,0 +1,546 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:  rgba(148,206,148,0.01); /* Dolores */
+   
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(7, 7, 7, 0.877);
+    color: #fff;
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Header */
+
+header {
+    background-color:  #94CF94; /* Dolores*/
+    color: #fff;
+}
+
+header .logo {
+    padding: 10px 0;
+}
+
+header .logo img {
+    width: 200px;
+}
+
+header nav {
+     text-align: right;  
+     font-weight: bolder;/* Dolores*/
+     font-size: larger;/* Dolores*/
+}
+
+header nav ul {
+    display: inline-block;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color:  whitesmoke; /* #635C3B; Dolores, estaba blanco el texto */
+    transition: all .3s ease;
+}
+
+header nav ul li a:hover {
+    color: rgb(87, 83, 83); /* Dolores,  el color del hover era #f00*/
+}
+
+/* Banner */
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.banner .banner-text {
+    text-align: center;
+    color:#5D7A61; /* Dolores, estaba blanco el texto */
+}
+
+.banner .banner-text h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.banner .banner-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Acerca */
+
+.acerca {
+    padding: 100px 0;
+    color:#5D7A61; /* el texto era negro */
+}
+
+.acerca .acerca-text {
+    text-align: center;
+    margin-bottom: 50px;
+    color:#5D7A61; /* Dolores, estaba blanco el texto */
+}
+
+
+.acerca .acerca-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:#5D7A61;
+}
+
+/* cambio tema colores letras  Leonardo*/
+
+.acerca .energia-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color:#5D7A61;
+}
+
+.acerca .energia p {
+    font-size: 20px;
+    text-align: justify; /* pongo el texto justificado porque centrado no queda bien Leonardo*/
+    margin-bottom: 20px;
+    color:#5D7A61;
+}
+
+.acerca .energia h3 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color:#5D7A61;
+}
+
+/* hasta aca  colores letras Leonardo*/
+
+
+.acerca .acerca-img {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+   
+}
+
+.acerca .acerca-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+/* Novedades */
+
+.novedades {
+    padding: 100px 0;
+    color:#5D7A61; /* Dolores, el texto era negro */
+}
+
+.novedades h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.novedades .novedades-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.novedades .novedad {
+    width: calc(33.333% - 20px);
+    margin-bottom: 50px;
+}
+
+.novedades .novedad h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.novedades .novedad p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* AGREGO ESTILO PARA LA API LEONARDO*/
+.API p {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color:#5D7A61;
+}
+.API table {
+    font-size: 10px;
+    margin-bottom: 20px;
+    color:#5D7A61;
+}
+
+/* Footer */
+
+footer {
+    background-color: #387A42; /* Dolores, estaba blanco el texto  rgb(14, 114, 172);*/
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .footer-text {
+    text-align: center;
+}
+
+footer .footer-redes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .footer-redes a {
+    color: #fff;
+    margin: 0 10px;
+    transition: all .3s ease;
+}
+
+footer .footer-redes a:hover {
+    color: rgb(87, 83, 83); /* Dolores,  el color del hover era #f00*/
+}
+
+.contacto
+{
+    color:rgb(87, 83, 83);
+    padding-left: 20px;
+}
+
+.novedades .contacto2 {
+    width: calc(20% - 20px);
+    margin-bottom: 50px;
+}
+
+.energia{
+    color:rgb(87, 83, 83); /* Dolores*/
+    padding: 20px 0; /* Dolores*/
+    text-align: center;
+}
+
+/*Responsive*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text p {
+        font-size: 14px;
+    }
+    .banner-text .btn {
+        margin: 20px auto;
+    }
+    .acerca {
+        flex-direction: column;
+    }
+    .acerca-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .acerca-img {
+        width: 100%;
+    }
+    .acerca-img img {
+        width: 100%;
+    }
+    .encuesta {
+        flex-direction: column;
+    }
+    .encuesta-text {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .encuesta-text p {
+        font-size: 14px;
+    }
+    .encuesta-text form {
+        width: 100%;
+    }
+    .encuesta-text form input {
+        width: 100%;
+    }
+    .encuesta-text form input[type="submit"] {
+        width: 100%;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .footer-redes {
+        text-align: center;
+    }
+    .footer-redes a {
+        margin: 0 10px;
+    }
+}
+
+
+
+
+/*Estilos para la encuesta del index*/
+
+.encuesta {
+    background-color:#94CF94; /* Dolores, antes rgb(13, 173, 74); */ 
+    color: #fff;
+    padding: 20px 0;
+}
+
+.encuesta .encuesta-text {
+    text-align: center;
+}
+
+.encuesta .encuesta-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.encuesta .encuesta-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.encuesta .encuesta-redes {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.encuesta .encuesta-redes a {
+    color: #fff;
+    margin: 0 10px;
+    transition: all .3s ease;
+}
+
+.encuesta .encuesta-redes a:hover {
+    color: #f00;
+}
+
+/*Estos son los estilos todas las secciones de la página web con responsive con 3 puntos de corte para 3
+tamaños de dispositivos distintos.*/
+
+/*Responsive con 3 puntos de corte para 3
+tamaños de dispositivos distintos.*/
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text p {
+        font-size: 14px;
+    }
+    .banner-text .btn {
+        margin: 20px auto;
+    }
+    .acerca-text {
+        text-align: center;
+    }
+    .acerca-text h2 {
+        font-size: 30px;
+    }
+    .acerca-text p {
+        font-size: 14px;
+    }
+    .acerca-text .btn {
+        margin: 20px auto;
+    }
+    .acerca-img {
+        margin: 20px auto;
+    }
+    .acerca-img img {
+        width: 100%;
+    }
+    .encuesta-text {
+        text-align: center;
+    }
+    .encuesta-text h2 {
+        font-size: 30px;
+    }
+    .encuesta-text p {
+        font-size: 14px;
+    }
+    .encuesta-text .btn {
+        margin: 20px auto;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .footer-text p {
+        font-size: 14px;
+    }
+    .footer-redes {
+        text-align: center;
+    }
+    .footer-redes a {
+        margin: 0 10px;
+    }
+}
+
+/*Punto de corte 2*/
+
+@media screen and (max-width: 1024px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text p {
+        font-size: 14px;
+    }
+    .banner-text .btn {
+        margin: 20px auto;
+    }
+    .acerca-text {
+        text-align: center;
+    }
+    .acerca-text h2 {
+        font-size: 30px;
+    }
+    .acerca-text p {
+        font-size: 14px;
+    }
+    .acerca-text .btn {
+        margin: 20px auto;
+    }
+    .acerca-img {
+        margin: 20px auto;
+    }
+    .acerca-img img {
+        width: 100%;
+    }
+    .encuesta-text {
+        text-align: center;
+    }
+    .encuesta-text h2 {
+        font-size: 30px;
+    }
+    .encuesta-text p {
+        font-size: 14px;
+    }
+    .encuesta-text .btn {
+        margin: 20px auto;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .footer-text p {
+        font-size: 14px;
+    }
+    .footer-redes {
+        text-align: center;
+    }
+    .footer-redes a {
+        margin: 0 10px;
+    }
+}
+
+/*Punto de corte 3*/
+
+@media screen and (max-width: 1440px) {
+    .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner-text {
+        text-align: center;
+    }
+    .banner-text h1 {
+        font-size: 30px;
+    }
+    .banner-text p {
+        font-size: 14px;
+    }
+    .banner-text .btn {
+        margin: 20px auto;
+    }
+    .acerca-text {
+        text-align: center;
+    }
+    .acerca-text h2 {
+        font-size: 30px;
+    }
+    .acerca-text p {
+        font-size: 14px;
+    }
+    .acerca-text .btn {
+        margin: 20px auto;
+    }
+    .acerca-img {
+        margin: 20px auto;
+    }
+    .acerca-img img {
+        width: 100%;
+    }
+    .encuesta-text {
+        text-align: center;
+    }
+    .encuesta-text h2 {
+        font-size: 30px;
+    }
+    .encuesta-text p {
+        font-size: 14px;
+    }
+    .encuesta-text .btn {
+        margin: 20px auto;
+    }
+    .footer-text {
+        text-align: center;
+    }
+    .footer-text p {
+        font-size: 14px;
+    }
+    .footer-redes {
+        text-align: center;
+    }
+    .footer-redes a {
+        margin: 0 10px;
+    }
+}
